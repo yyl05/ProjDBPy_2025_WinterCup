@@ -1,13 +1,11 @@
 import mysql.connector
 import os
 
-
 my_password= os.environ.get('my_password')
 
 def wintercup_open():
     return mysql.connector.connect(host='127.0.0.1',user='root',password=my_password,port='3306',
                                    database='tournament_wintercup',autocommit=True, buffered=True)
-
 
 db_connection= wintercup_open()
 
@@ -18,7 +16,6 @@ def menu():
     print("1. UPDATE")
     print("4. DELETE")
     print("5. QUIT")
-
 
 def select_players():
     query = "SELECT * FROM players"
@@ -68,4 +65,10 @@ def add_data_coaches(lastname, firstname, type, teams_id):
     cursor.close()
     return insert_id
 
-
+def add_data_statistics(statistics_points, statistics_assists, statistics_rebounds, statistics_blocks, statistics_steals):
+    query = "INSERT INTO statistics (statistics_points, statistics_assists, statistics_rebounds, statistics_blocks, statistics_steals) values (%s, %s, %s, %s, %s)"
+    cursor = db_connection.cursor()
+    cursor.execute(query, (statistics_points, statistics_assists, statistics_rebounds, statistics_blocks, statistics_steals))
+    insert_id = cursor.lastrowid
+    cursor.close()
+    return insert_id
