@@ -44,10 +44,10 @@ def add_data_teams(name, creation_date):
     cursor.close()
     return insert_id
 
-def add_data_players(lastname, firstname, age, tall, position, statistics, highschool_id, teams_id):
-    query = "INSERT INTO players (lastname, firstname, age, tall, position, statistics, highschool_id, teams_id) values (%s, %s, %s, %s, %s, %s, %s, %s)"
+def add_data_players(lastname, firstname, age, tall, position, highschool_id, teams_id):
+    query = "INSERT INTO players (lastname, firstname, age, tall, position, highschool_id, teams_id) values (%s, %s, %s, %s, %s, %s, %s, %s)"
     cursor = db_connection.cursor()
-    cursor.execute(query, (lastname, firstname, age, tall, position, statistics, highschool_id, teams_id))
+    cursor.execute(query, (lastname, firstname, age, tall, position, highschool_id, teams_id))
     insert_id = cursor.lastrowid
     cursor.close()
     return insert_id
@@ -67,5 +67,6 @@ def add_data_coaches(lastname, firstname, type, teams_id):
     insert_id = cursor.lastrowid
     cursor.close()
     return insert_id
+
 
 
