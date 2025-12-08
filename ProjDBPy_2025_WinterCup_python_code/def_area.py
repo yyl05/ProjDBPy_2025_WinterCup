@@ -4,10 +4,12 @@ import os
 my_password= os.environ.get('my_password')
 
 def wintercup_open():
-    return mysql.connector.connect(host='127.0.0.1',user='root',password=my_password,port='3306',
+    return mysql.connector.connect(host='127.0.0.1', user='root', password=my_password, port='3306',
                                    database='tournament_wintercup',autocommit=True, buffered=True)
 
 db_connection= wintercup_open()
+
+print(db_connection)
 
 def menu():
     print("Que voulez-vous faire comme opération? \n")
@@ -15,11 +17,12 @@ def menu():
     print("1. INSERT")
     print("1. UPDATE")
     print("4. DELETE")
-    print("5. QUIT")
+    print("5. INSERT WITH CSV FILE")
+    print("6. QUIT")
 
 def select_players():
     query = "SELECT * FROM players"
-    cursor = wintercup_open().cursor()
+    cursor = db_connection.cursor()
     cursor.execute(query)
     rows = cursor.fetchall()
     cursor.close()
@@ -42,7 +45,7 @@ def add_data_teams(name, creation_date):
     return insert_id
 
 def add_data_players(lastname, firstname, age, tall, position, highschool_id, teams_id):
-    query = "INSERT INTO players (lastname, firstname, age, tall, position, highschool_id, teams_id) values (%s, %s, %s, %s, %s, %s, %s, %s)"
+    query = "INSERT INTO players (lastname, firstname, age, tall, position, highschool_id, teams_id) values (%s, %s, %s, %s, %s, %s, %s)"
     cursor = db_connection.cursor()
     cursor.execute(query, (lastname, firstname, age, tall, position, highschool_id, teams_id))
     insert_id = cursor.lastrowid
@@ -72,3 +75,63 @@ def add_data_statistics(statistics_points, statistics_assists, statistics_reboun
     insert_id = cursor.lastrowid
     cursor.close()
     return insert_id
+
+def get_team_id_from_name(name):
+    query = "SELECT name FROM teams WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(name))
+    if cursor.rowcount == 0:
+        cursor.close()
+        return None
+    else:
+        row = cursor.fetchone()
+        cursor.close()
+        return row[0]
+    
+def get_highschool_id_from_name(name):
+    query = "SELECT name FROM highschool WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(name))
+    if cursor.rowcount == 0:
+        cursor.close()
+        return None
+    else:
+        row = cursor.fetchone()
+        cursor.close()
+        return row[0]
+    
+def get_player_id_from_name(name):
+    query = "SELECT name FROM players WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(name))
+    if cursor.rowcount == 0:
+        cursor.close()
+        return None
+    else:
+        row = cursor.fetchone()
+        cursor.close()
+        return row[0]
+    
+def get_coache_id_from_name(name):
+    query = "SELECT name FROM coaches WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(name))
+    if cursor.rowcount == 0:
+        cursor.close()
+        return None
+    else:
+        row = cursor.fetchone()
+        cursor.close()
+        return row[0]
+    
+def update_teams_from_id(id, column, new_value):
+    columns_team = ["name","creation_date"]
+
+    if column not in columns_team:
+        raise TypeError("Aucune colonne identifié")
+    
+    query = f"UPDATE teams SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
+    
