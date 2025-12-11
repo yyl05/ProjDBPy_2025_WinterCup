@@ -9,7 +9,6 @@ def wintercup_open():
 
 db_connection= wintercup_open()
 
-print(db_connection)
 
 def menu():
     print("Que voulez-vous faire comme opération? \n")
@@ -77,21 +76,21 @@ def add_data_statistics(statistics_points, statistics_assists, statistics_reboun
     return insert_id
 
 def get_team_id_from_name(name):
-    query = "SELECT name FROM teams WHERE id = %s"
+    query = "SELECT id FROM teams WHERE name = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name))
+    cursor.execute(query,(name,))
     if cursor.rowcount == 0:
         cursor.close()
-        return None
+        return None 
     else:
         row = cursor.fetchone()
         cursor.close()
         return row[0]
     
 def get_highschool_id_from_name(name):
-    query = "SELECT name FROM highschool WHERE id = %s"
+    query = "SELECT id FROM highschool WHERE name = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name))
+    cursor.execute(query,(name,))
     if cursor.rowcount == 0:
         cursor.close()
         return None
@@ -101,9 +100,9 @@ def get_highschool_id_from_name(name):
         return row[0]
     
 def get_player_id_from_name(name):
-    query = "SELECT name FROM players WHERE id = %s"
+    query = "SELECT id FROM players WHERE name = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name))
+    cursor.execute(query,(name,))
     if cursor.rowcount == 0:
         cursor.close()
         return None
@@ -113,9 +112,9 @@ def get_player_id_from_name(name):
         return row[0]
     
 def get_coache_id_from_name(name):
-    query = "SELECT name FROM coaches WHERE id = %s"
+    query = "SELECT id FROM coaches WHERE name = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name))
+    cursor.execute(query,(name,))
     if cursor.rowcount == 0:
         cursor.close()
         return None

@@ -80,20 +80,20 @@ def insert_datas_players():
             print(err)
 
 
-
-
-
 def insert_datas_team_with_csv():
-    with open("../csv/teams.csv") as file:
+    with open("/home/yuri/ProjDBPy_2025_WinterCup/csv/teams.csv", encoding='latin-1') as file:
         next(file)
         for line in file:   
             row=line.strip().split(",")
             if get_team_id_from_name(row[0]):
-                print(f"La team avec l'id: {row[0]} existe déjà")
+                print(f"La team avset foreign_key_checks=0ec l'id: {row[0]} existe déjà")
             else:
                 add_data_teams(row[0], row[1])
 
+        print("Les données ont bien été enregistrées")
 
+
+                
 insert_datas_team_with_csv()
 
 def insert_datas_highschool_with_csv():
