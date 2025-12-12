@@ -224,3 +224,35 @@ def update_statistics_from_id(id, column, new_value):
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
+
+def delete_teams_from_id(team_id):
+    query = "DELETE FROM teams WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query, (team_id,))
+    db_connection.commit()
+    cursor.close()
+    print(f"L'équipe {team_id} supprimée avec succès.")
+
+def delete_highschool_from_id(highschool_id):
+    query = "DELETE FROM highschool WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query, (highschool_id,))
+    db_connection.commit()
+    cursor.close()
+    print(f"L'école {highschool_id} supprimée avec succès.")
+
+def delete_players_from_id(players_id):
+    query = "DELETE FROM players WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query, (players_id,))
+    db_connection.commit()
+    cursor.close()
+    print(f"Le joueur {players_id} supprimée avec succès.")
+
+def delete_coaches_from_id(coaches_id):
+    query = "DELETE FROM coaches WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query, (coaches_id,))
+    db_connection.commit()
+    cursor.close()
+    print(f"Le coach {coaches_id} supprimée avec succès.")
