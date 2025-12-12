@@ -23,6 +23,46 @@ def select_players():
     cursor.close()
     return rows
 
+def select_teams():
+    query = "SELECT * FROM teams"
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+def select_highschool():
+    query = "SELECT * FROM highschool"
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+def select_tournament():
+    query = "SELECT * FROM tournaments"
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+def select_statistics():
+    query = "SELECT * FROM statistics"
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+def select_coaches():
+    query = "SELECT * FROM coaches"
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
 def add_data_highschool(name, adress, prefecture):
     query = "INSERT INTO highschool (name, adress, prefecture) values (%s, %s, %s)"
     cursor = db_connection.cursor()
@@ -107,7 +147,7 @@ def get_player_id_from_name(name):
         cursor.close()
         return row[0]
     
-def get_coache_id_from_name(name):
+def get_coach_id_from_name(name):
     query = "SELECT name FROM coaches WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(name))
@@ -148,6 +188,17 @@ def update_players_from_id(id, column, new_value):
         raise TypeError("Aucune colonne identifié")
     
     query = f"UPDATE players SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
+
+def update_coaches_from_id(id, column, new_value):
+    columns_coach = ["lastname","firstname","type"]
+
+    if column not in columns_coach:
+        raise TypeError("Aucune colonne identifié")
+    
+    query = f"UPDATE coaches SET {column} = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
