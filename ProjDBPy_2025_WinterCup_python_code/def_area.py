@@ -1,10 +1,13 @@
 import mysql.connector
+import os
+
+my_password= os.environ.get('my_password')
 
 def wintercup_open():
-    return mysql.connector.connect(host='127.0.0.1', user='root', password='KqGeB/&105-mO', port='3306',
-                                   database='tournament_wintercup', autocommit=True, buffered=True)
+    return mysql.connector.connect(host='127.0.0.1', user='root', password=my_password, port='3306',
+                                   database='tournament_wintercup',autocommit=True, buffered=True)
 
-db_connection = wintercup_open()
+db_connection= wintercup_open()
 
 def menu() :
     print("Que voulez-vous faire comme opération? \n")

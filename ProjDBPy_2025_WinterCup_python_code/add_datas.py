@@ -94,8 +94,6 @@ def insert_datas_team_with_csv():
 
 
                 
-insert_datas_team_with_csv()
-
 def insert_datas_highschool_with_csv():
     with open("../csv/highschool.csv") as file:
         next(file)
