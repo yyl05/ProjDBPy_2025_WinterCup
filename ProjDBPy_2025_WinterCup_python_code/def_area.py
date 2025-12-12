@@ -182,7 +182,7 @@ def update_highschool_from_id(id, column, new_value):
     cursor.close()
 
 def update_players_from_id(id, column, new_value):
-    columns_player = ["lastname","firstname","age","tall","position",""]
+    columns_player = ["lastname","firstname","age","tall","position"]
 
     if column not in columns_player:
         raise TypeError("Aucune colonne identifié")
