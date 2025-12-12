@@ -1,16 +1,12 @@
 import mysql.connector
-import os
-
-my_password= os.environ.get('my_password')
 
 def wintercup_open():
-    return mysql.connector.connect(host='127.0.0.1', user='root', password=my_password, port='3306',
-                                   database='tournament_wintercup',autocommit=True, buffered=True)
+    return mysql.connector.connect(host='127.0.0.1', user='root', password='KqGeB/&105-mO', port='3306',
+                                   database='tournament_wintercup', autocommit=True, buffered=True)
 
-db_connection= wintercup_open()
+db_connection = wintercup_open()
 
-
-def menu():
+def menu() :
     print("Que voulez-vous faire comme opération? \n")
     print("1. SELECT")
     print("1. INSERT")
@@ -76,21 +72,21 @@ def add_data_statistics(statistics_points, statistics_assists, statistics_reboun
     return insert_id
 
 def get_team_id_from_name(name):
-    query = "SELECT id FROM teams WHERE name = %s"
+    query = "SELECT name FROM teams WHERE id = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name,))
+    cursor.execute(query,(name))
     if cursor.rowcount == 0:
         cursor.close()
-        return None 
+        return None
     else:
         row = cursor.fetchone()
         cursor.close()
         return row[0]
     
 def get_highschool_id_from_name(name):
-    query = "SELECT id FROM highschool WHERE name = %s"
+    query = "SELECT name FROM highschool WHERE id = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name,))
+    cursor.execute(query,(name))
     if cursor.rowcount == 0:
         cursor.close()
         return None
@@ -100,9 +96,9 @@ def get_highschool_id_from_name(name):
         return row[0]
     
 def get_player_id_from_name(name):
-    query = "SELECT id FROM players WHERE name = %s"
+    query = "SELECT name FROM players WHERE id = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name,))
+    cursor.execute(query,(name))
     if cursor.rowcount == 0:
         cursor.close()
         return None
@@ -112,9 +108,9 @@ def get_player_id_from_name(name):
         return row[0]
     
 def get_coache_id_from_name(name):
-    query = "SELECT id FROM coaches WHERE name = %s"
+    query = "SELECT name FROM coaches WHERE id = %s"
     cursor = db_connection.cursor()
-    cursor.execute(query,(name,))
+    cursor.execute(query,(name))
     if cursor.rowcount == 0:
         cursor.close()
         return None
@@ -133,4 +129,47 @@ def update_teams_from_id(id, column, new_value):
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
+
+def update_highschool_from_id(id, column, new_value):
+    columns_highschool = ["name","address","prefecture"]
+
+    if column not in columns_highschool:
+        raise TypeError("Aucune colonne identifié")
     
+    query = f"UPDATE highschool SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
+
+def update_players_from_id(id, column, new_value):
+    columns_player = ["lastname","firstname","age","tall","position",""]
+
+    if column not in columns_player:
+        raise TypeError("Aucune colonne identifié")
+    
+    query = f"UPDATE players SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
+
+def update_tournament_from_id(id, column, new_value):
+    columns_tournament = ["name","place","ranking","matchs_day"]
+
+    if column not in columns_tournament:
+        raise TypeError("Aucune colonne identifié")
+    
+    query = f"UPDATE tournament SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
+
+def update_statistics_from_id(id, column, new_value):
+    columns_statistics = ["statistics_points","statistics_assists","statistics_rebounds","statistics_blocks","statistics_steals"]
+
+    if column not in columns_statistics:
+        raise TypeError("Aucune colonne identifié")
+    
+    query = f"UPDATE statistics SET {column} = %s WHERE id = %s"
+    cursor = db_connection.cursor()
+    cursor.execute(query,(new_value, id))
+    cursor.close()
