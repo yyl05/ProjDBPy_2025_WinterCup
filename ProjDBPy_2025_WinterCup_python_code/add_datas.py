@@ -1,6 +1,37 @@
 from def_area import *
 from datetime import datetime
 
+def select_data_teams():
+    get_teams = select_teams()
+    for team in get_teams:
+        print(f"{team[0]} - {team[1]} - {team[2]}")
+
+def select_data_highschool():
+    get_highschool = select_highschool()
+    for highschool in get_highschool:
+        print(f"{highschool[0]} - {highschool[1]} - {highschool[2]} - {highschool[3]}")
+
+def select_data_coachs():
+    get_coach = select_coaches()
+    for coach in get_coach:
+        print(f"{coach[0]} - {coach[1]} - {coach[2]} - {coach[3]} - {coach[4]}")
+
+def select_data_players():
+    get_player = select_players()
+    for player in get_player:
+        print(f"\n{player[0]} - {player[1]} - {player[2]} - {player[3]} - {player[4]} - {player[5]} - {player[6]} - {player[7]}")
+
+def select_data_tournament():
+    get_tournament = select_tournament()
+    for tournament in get_tournament:
+        print(f"{tournament[0]} - {tournament[1]} - {tournament[2]} - {tournament[3]} - {tournament[4]} - {tournament[5]}")
+
+# Pas d'idée pour l'instant de comment code cette partie que a une table intermediaire
+def select_player_statistics():
+    pass
+
+
+
 def insert_datas_highschool():
     while True:
         print("Rentrez les informations de l'école: ")
@@ -93,7 +124,6 @@ def insert_datas_team_with_csv():
         print("Les données ont bien été enregistrées")
 
 
-                
 def insert_datas_highschool_with_csv():
     with open("../csv/highschool.csv") as file:
         next(file)
@@ -119,7 +149,76 @@ def insert_datas_coaches_with_csv():
         next(file)
         for line in file:
             row=line.strip().split(",")
-            if get_coache_id_from_name(row[0]):
+            if get_coach_id_from_name(row[0]):
                 print(f"Le coache avec l'id: {row[0]} existe déjà")
             else:
-                add_data_coaches(row[0], row[1], row[2], row[3])
+                add_data_coachs(row[0], row[1], row[2], row[3])
+
+def update_data_team():
+    columns_team = ["name"]
+    print("Voici les colonnes modifiables: ",', '.join(columns_team))
+    
+    select_data_teams()
+
+    new_name_team = input("Choisissez le nouveau nom de l'équipe: ")
+    while True:
+        try:
+            id_team = int(input("Selectionnez l'ID: "))
+            break
+        except ValueError as err:
+            print(err)
+    update_teams_from_id(id_team, new_name_team)
+    print(f"\nNouveau nom: {new_name_team} à été modifié pour l'ID: {id_team}")
+
+def update_data_players():
+    columns_player = ["age","tall","position"]
+    print("\nVoici les colonnes modifiables: ",', '.join(columns_player))
+
+    select_data_players()
+
+    while True:
+        choice_column = input("\nChoisissez la colonne qui sera modifiée: ")
+        if choice_column in columns_player:
+            break
+        else:
+            print("\nVeuillez choisir une colonne modifiables: ",', '.join(columns_player))
+    if choice_column.lower() == columns_player[0]:
+        while True:    
+            try:
+                new_age = int(input("Nouvelle âge: "))
+                id_player = int(input("ID: "))
+                break
+            except ValueError as err:
+                print(err)
+        update_players_from_id(id_player,choice_column,new_age)
+        print(f"Nouvelle age: {new_age} à été modifiée pour l'ID: {id_player}")
+    elif choice_column.lower() == columns_player[1]:
+
+        while True:
+            try:
+                new_height = int(input("Nouvelle taille: "))
+                id_player = int(input("ID: "))
+                break
+            except ValueError as err:
+                print(err)
+
+        update_players_from_id(id_player,choice_column,new_height)
+        print(f"Nouvelle taille: {new_height} à été modifiée pour l'ID: {id_player}")
+        
+    elif choice_column.lower() == columns_player[2]:
+    
+        while True:
+            new_position = int(input("Nouvelle poste: "))
+            if len(new_position) != 2:
+                print("Veuillez rentrer uniquement les 2 lettres du poste")
+            else:
+                break
+
+        while True:
+            try:
+                id_player = int(input("ID: "))
+                break
+            except ValueError as err:
+                print(err)
+        update_players_from_id(id_player,choice_column,new_height)
+        print(f"Nouvelle taille: {new_height} à été modifiée pour l'ID: {id_player}")

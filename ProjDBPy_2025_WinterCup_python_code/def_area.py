@@ -50,6 +50,7 @@ def select_tournament():
     cursor.close()
     return rows
 
+# Inutile si on ne sait pas à quel joueur appartient
 def select_statistics():
     query = "SELECT * FROM statistics"
     cursor = db_connection.cursor()
@@ -98,7 +99,7 @@ def add_data_tournament(name, place, ranking, matchs_day, teams_id):
     cursor.close()
     return insert_id
 
-def add_data_coaches(lastname, firstname, type, teams_id):
+def add_data_coachs(lastname, firstname, type, teams_id):
     query = "INSERT INTO coaches (lastname, firstname, type, teams_id) values (%s, %s, %s, %s)"
     cursor = db_connection.cursor()
     cursor.execute(query, (lastname, firstname, type, teams_id))
@@ -162,13 +163,8 @@ def get_coach_id_from_name(name):
         cursor.close()
         return row[0]
     
-def update_teams_from_id(id, column, new_value):
-    columns_team = ["name","creation_date"]
-
-    if column not in columns_team:
-        raise TypeError("Aucune colonne identifié")
-    
-    query = f"UPDATE teams SET {column} = %s WHERE id = %s"
+def update_teams_from_id(id, new_value): 
+    query = f"UPDATE teams SET name = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
@@ -177,31 +173,30 @@ def update_highschool_from_id(id, column, new_value):
     columns_highschool = ["name","address","prefecture"]
 
     if column not in columns_highschool:
-        raise TypeError("Aucune colonne identifié")
+        raise ValueError("Aucune colonne identifié")
     
-    query = f"UPDATE highschool SET {column} = %s WHERE id = %s"
+    safe_input = columns_highschool[column]
+    
+    query = f"UPDATE highschool SET {safe_input} = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
 
 def update_players_from_id(id, column, new_value):
-    columns_player = ["lastname","firstname","age","tall","position"]
+    columns_player = ["age","tall","position"]
 
     if column not in columns_player:
-        raise TypeError("Aucune colonne identifié")
+        raise ValueError("Aucune colonne identifié")
     
-    query = f"UPDATE players SET {column} = %s WHERE id = %s"
+    safe_input = columns_player[column]
+
+    query = f"UPDATE players SET {safe_input} = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
 
-def update_coaches_from_id(id, column, new_value):
-    columns_coach = ["lastname","firstname","type"]
-
-    if column not in columns_coach:
-        raise TypeError("Aucune colonne identifié")
-    
-    query = f"UPDATE coaches SET {column} = %s WHERE id = %s"
+def update_coaches_from_id(id, new_value):
+    query = f"UPDATE coaches SET type = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
@@ -210,9 +205,11 @@ def update_tournament_from_id(id, column, new_value):
     columns_tournament = ["name","place","ranking","matchs_day"]
 
     if column not in columns_tournament:
-        raise TypeError("Aucune colonne identifié")
+        raise ValueError("Aucune colonne identifié")
     
-    query = f"UPDATE tournament SET {column} = %s WHERE id = %s"
+    safe_input = columns_tournament[column]
+    
+    query = f"UPDATE tournament SET {safe_input} = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
@@ -221,9 +218,11 @@ def update_statistics_from_id(id, column, new_value):
     columns_statistics = ["statistics_points","statistics_assists","statistics_rebounds","statistics_blocks","statistics_steals"]
 
     if column not in columns_statistics:
-        raise TypeError("Aucune colonne identifié")
+        raise ValueError("Aucune colonne identifié")
     
-    query = f"UPDATE statistics SET {column} = %s WHERE id = %s"
+    safe_input = columns_statistics[column]
+    
+    query = f"UPDATE statistics SET {safe_input} = %s WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query,(new_value, id))
     cursor.close()
@@ -232,7 +231,6 @@ def delete_teams_from_id(team_id):
     query = "DELETE FROM teams WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (team_id,))
-    db_connection.commit()
     cursor.close()
     print(f"L'équipe {team_id} supprimée avec succès.")
 
@@ -240,7 +238,6 @@ def delete_highschool_from_id(highschool_id):
     query = "DELETE FROM highschool WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (highschool_id,))
-    db_connection.commit()
     cursor.close()
     print(f"L'école {highschool_id} supprimée avec succès.")
 
@@ -248,7 +245,6 @@ def delete_players_from_id(players_id):
     query = "DELETE FROM players WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (players_id,))
-    db_connection.commit()
     cursor.close()
     print(f"Le joueur {players_id} supprimée avec succès.")
 
@@ -256,6 +252,5 @@ def delete_coaches_from_id(coaches_id):
     query = "DELETE FROM coaches WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (coaches_id,))
-    db_connection.commit()
     cursor.close()
     print(f"Le coach {coaches_id} supprimée avec succès.")
