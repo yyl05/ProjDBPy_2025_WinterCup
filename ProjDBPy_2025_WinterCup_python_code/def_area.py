@@ -1,6 +1,7 @@
 import mysql.connector
 import os
 from datetime import *
+import time
 
 
 my_password= os.environ.get('my_password')
@@ -37,7 +38,7 @@ def select_highschool():
     return rows
 
 def select_tournament():
-    query = "SELECT * FROM tournaments"
+    query = "SELECT * FROM tournament"
     cursor = db_connection.cursor()
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -251,29 +252,47 @@ def delete_teams_from_id(team_id):
     cursor = db_connection.cursor()
     cursor.execute(query, (team_id,))
     cursor.close()
-    print(f"L'équipe {team_id} supprimée avec succès.")
+    print(f"\nL'équipe {team_id} supprimée avec succès.")
 
 def delete_highschool_from_id(highschool_id):
     query = "DELETE FROM highschool WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (highschool_id,))
     cursor.close()
-    print(f"L'école {highschool_id} supprimée avec succès.")
+    print(f"\nL'école {highschool_id} supprimée avec succès.")
 
 def delete_players_from_id(players_id):
     query = "DELETE FROM players WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (players_id,))
     cursor.close()
-    print(f"Le joueur {players_id} supprimée avec succès.")
+    print(f"\nLe joueur {players_id} supprimée avec succès.")
 
 def delete_coaches_from_id(coaches_id):
     query = "DELETE FROM coaches WHERE id = %s"
     cursor = db_connection.cursor()
     cursor.execute(query, (coaches_id,))
     cursor.close()
-    print(f"Le coach {coaches_id} supprimée avec succès.")
+    print(f"\nLe coach {coaches_id} supprimée avec succès.")
 
+def exec_delete_teams():
+    print("Voici les données de la table teams: \n")
+    for i in range(1,4):
+        print("temps pour affichage:",i,end='\r')
+        time.sleep(1)
+    select_data_teams()
+    while True:
+        try:
+            id_for_delete = int(input("Rentrez l'id pour delete: "))
+            break
+        except ValueError as err:
+            print(err)    
+    try:
+        delete_teams_from_id(id_for_delete)
+    except ValueError as err:
+        print("L'id séléctionnez n'existe pas")
+
+    
 # Pas d'idée pour l'instant de comment code cette partie qui a une table intermediaire
 def select_player_statistics():
     pass

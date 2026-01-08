@@ -107,7 +107,9 @@ def main() :
                 break
             else:
                 print("Choisissez un chiffre qui appartient au menu s'ils vous plaît.")
-
+        elif choice_usr == 4:
+            #delete
+            pass
 
         elif choice_usr == 5:
             print("\n1. Teams")
@@ -139,10 +141,14 @@ def main() :
                 insert_datas_tournament_with_csv()
             else:
                 print("Choisissez un chiffre qui appartient au menu s'ils vous plaît.")   
+        elif choice_usr == 6:
+            #quitter
+            pass    
                         
             
 
 #Continuer le code du menu pour l'usr et rajouter les def delete, updates, et certains selects
+#def updates fini il reste delete et select a voir encore
 
 #Si possible coder une petite interface dans le terminal(Apprendre comment faire ca pendant les vancances.)
 
