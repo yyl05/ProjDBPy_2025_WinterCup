@@ -1,481 +1,97 @@
 lastname,firstname,age,tall,position,highschool_id,teams_id
 Nakamura,Evan,16,199,SG,Kumezaki High,Kumezaki High
-Kishida,Kaito,18,186,PF,1,1
-Johnson,Aoi,18,177,SG,1,1
-Smith,Hayato,16,183,C,1,1
-Kishida,Evan,18,180,SG,1,1
-Kobayashi,Sora,16,199,C,1,1
-Takahashi,Riku,16,189,PF,1,1
-Johnson,Noah,16,199,PG,1,1
-Brown,Noah,17,201,SG,1,1
-Watanabe,Riku,18,199,PF,1,1
-Park,Daiki,16,188,C,1,1
-Fujita,Mason,18,170,C,1,1
-Kurosawa,Mason,18,186,PF,2,2
-Mori,Sora,18,196,PF,2,2
-Johnson,Jun,16,188,C,2,2
-Takahashi,Aoi,18,172,PF,2,2
-Kurosawa,Kaito,17,186,C,2,2
-Yamada,Leo,16,171,PF,2,2
-Mori,Shin,18,205,PG,2,2
-Kurosawa,Evan,17,186,SG,2,2
-Kurosawa,Evan,16,197,PG,2,2
-Smith,Aoi,18,183,SF,2,2
-Kishida,Shin,16,175,SG,2,2
-Kishida,Ren,16,191,C,2,2
-Tanaka,Kaito,16,176,SF,3,3
-Abe,Hayato,16,190,PF,3,3
-Johnson,Riku,16,175,PG,3,3
-Lopez,Sora,18,178,PG,3,3
-Nakamura,Leo,17,174,SG,3,3
-Brown,Shin,17,173,PF,3,3
-Takahashi,Mason,16,182,C,3,3
-Ito,Mason,18,191,C,3,3
-Watanabe,Evan,17,200,C,3,3
-Lopez,Yuto,17,198,C,3,3
-Tanaka,Toma,17,176,SF,3,3
-Tanaka,Kaito,17,185,SF,3,3
-Gonzalez,Ren,17,204,SG,4,4
-Mori,Toma,16,191,PG,4,4
-Suzuki,Jun,17,172,PF,4,4
-Tanaka,Hayato,16,192,PG,4,4
-Abe,Hayato,16,186,PG,4,4
-Kishida,Jun,16,192,SF,4,4
-Park,Jun,18,205,SF,4,4
-Takahashi,Riku,16,170,C,4,4
-Abe,Mason,18,193,PF,4,4
-Johnson,Ren,17,184,SF,4,4
-Kurosawa,Kaito,18,174,SG,4,4
-Watanabe,Riku,17,188,PF,4,4
-Gonzalez,Sora,18,188,C,5,5
-Suzuki,Leo,18,187,C,5,5
-Fujita,Evan,18,183,SG,5,5
-Watanabe,Yuto,18,195,PG,5,5
-Park,Toma,18,185,PG,5,5
-Abe,Hayato,17,174,PF,5,5
-Kurosawa,Sora,17,195,SG,5,5
-Tanaka,Leo,17,177,C,5,5
-Takahashi,Yuto,18,204,PG,5,5
-Johnson,Sora,18,184,SG,5,5
-Takahashi,Noah,18,192,C,5,5
-Lopez,Yuto,16,203,PG,5,5
-Fujita,Toma,17,183,PF,6,6
-Kurosawa,Mason,18,193,PG,6,6
-Lopez,Sora,18,175,C,6,6
-Tanaka,Jun,17,199,PF,6,6
-Yamada,Noah,17,181,PG,6,6
-Suzuki,Hayato,16,182,C,6,6
-Mori,Hayato,16,197,SG,6,6
-Lopez,Mason,18,172,PG,6,6
-Kurosawa,Noah,16,202,PF,6,6
-Kishida,Aoi,17,172,PG,6,6
-Tanaka,Hayato,18,176,PF,6,6
-Kato,Noah,18,181,C,6,6
-Sato,Ren,18,199,SF,7,7
-Brown,Kaito,18,183,SG,7,7
-Kurosawa,Kaito,17,180,SG,7,7
-Yamada,Hayato,18,179,PG,7,7
-Gonzalez,Evan,18,177,SF,7,7
-Nakamura,Mason,17,174,SG,7,7
-Kurosawa,Mason,18,205,SF,7,7
-Ito,Daiki,16,193,SF,7,7
-Kobayashi,Toma,17,197,PG,7,7
-Takahashi,Riku,16,173,SG,7,7
-Tanaka,Evan,18,203,PF,7,7
-Nakamura,Aoi,18,180,PG,7,7
-Ito,Ren,18,184,PF,8,8
-Yamada,Mason,16,203,PF,8,8
-Ito,Evan,17,192,SF,8,8
-Park,Leo,18,186,C,8,8
-Johnson,Aoi,17,191,C,8,8
-Yamada,Toma,16,193,SF,8,8
-Nakamura,Riku,16,192,C,8,8
-Abe,Noah,17,180,SF,8,8
-Watanabe,Daiki,17,192,C,8,8
-Smith,Daiki,16,183,SG,8,8
-Suzuki,Aoi,17,171,C,8,8
-Fujita,Shin,16,202,SG,8,8
-Gonzalez,Shin,17,181,SG,9,9
-Tanaka,Noah,16,202,PF,9,9
-Kurosawa,Riku,18,191,PF,9,9
-Ito,Noah,18,184,C,9,9
-Watanabe,Kaito,18,190,PG,9,9
-Abe,Hayato,16,175,SF,9,9
-Kato,Mason,17,195,PF,9,9
-Watanabe,Leo,17,176,PG,9,9
-Nakamura,Hayato,17,198,PG,9,9
-Yamada,Yuto,18,197,C,9,9
-Watanabe,Evan,17,200,PF,9,9
-Park,Jun,17,188,C,9,9
-Lopez,Hayato,16,186,SF,10,10
-Nakamura,Hayato,18,172,PG,10,10
-Park,Mason,17,171,C,10,10
-Watanabe,Toma,17,201,SG,10,10
-Brown,Shin,18,192,PG,10,10
-Yamada,Toma,16,180,PG,10,10
-Gonzalez,Riku,18,205,SG,10,10
-Brown,Riku,16,197,PF,10,10
-Fujita,Shin,17,170,SF,10,10
-Tanaka,Riku,16,187,PG,10,10
-Sato,Kaito,18,178,PG,10,10
-Suzuki,Kaito,18,201,SG,10,10
-Sato,Noah,17,191,PG,11,11
-Kishida,Aoi,18,181,PF,11,11
-Watanabe,Toma,16,184,C,11,11
-Tanaka,Yuto,18,182,PF,11,11
-Abe,Yuto,16,189,SG,11,11
-Kurosawa,Kaito,18,197,C,11,11
-Watanabe,Ren,16,178,PF,11,11
-Smith,Kaito,17,194,SG,11,11
-Johnson,Aoi,17,197,PG,11,11
-Lopez,Evan,17,199,C,11,11
-Gonzalez,Mason,16,174,C,11,11
-Mori,Evan,18,188,PF,11,11
-Brown,Yuto,17,184,SF,12,12
-Fujita,Sora,16,181,SF,12,12
-Tanaka,Aoi,17,202,SG,12,12
-Fujita,Toma,18,174,C,12,12
-Lopez,Riku,17,176,PG,12,12
-Fujita,Leo,16,199,PF,12,12
-Kato,Leo,18,171,SG,12,12
-Tanaka,Toma,17,179,SG,12,12
-Kurosawa,Toma,17,184,SG,12,12
-Nakamura,Shin,18,202,PG,12,12
-Kurosawa,Shin,18,189,PF,12,12
-Nakamura,Toma,17,170,C,12,12
-Park,Toma,17,193,SF,13,13
-Suzuki,Shin,17,189,SF,13,13
-Park,Toma,18,194,PG,13,13
-Suzuki,Ren,18,190,C,13,13
-Suzuki,Evan,17,180,SF,13,13
-Abe,Shin,18,200,SG,13,13
-Watanabe,Aoi,18,203,SG,13,13
-Mori,Shin,17,205,SF,13,13
-Mori,Aoi,18,192,PG,13,13
-Kurosawa,Jun,16,186,PF,13,13
-Fujita,Leo,16,195,C,13,13
-Sato,Shin,16,195,C,13,13
-Kurosawa,Evan,18,180,PG,14,14
-Kurosawa,Ren,17,185,PF,14,14
-Park,Riku,16,176,SG,14,14
-Kato,Toma,17,202,SG,14,14
-Park,Hayato,18,171,PF,14,14
-Gonzalez,Toma,17,181,PF,14,14
-Kishida,Shin,17,190,PF,14,14
-Kobayashi,Noah,18,192,SG,14,14
-Tanaka,Toma,18,184,SG,14,14
-Lopez,Sora,18,201,C,14,14
-Smith,Noah,18,171,PG,14,14
-Ito,Jun,18,180,PF,14,14
-Suzuki,Aoi,18,204,SF,15,15
-Kurosawa,Hayato,18,181,PG,15,15
-Kishida,Kaito,18,174,SG,15,15
-Tanaka,Evan,17,182,PF,15,15
-Ito,Kaito,17,178,C,15,15
-Nakamura,Jun,16,190,PF,15,15
-Park,Evan,18,203,C,15,15
-Kishida,Evan,17,184,SF,15,15
-Kobayashi,Toma,18,191,SG,15,15
-Gonzalez,Aoi,16,183,C,15,15
-Ito,Hayato,17,196,SF,15,15
-Gonzalez,Ren,17,182,PF,15,15
-Fujita,Shin,17,191,SG,16,16
-Tanaka,Leo,16,180,PF,16,16
-Tanaka,Noah,18,191,C,16,16
-Mori,Aoi,17,182,PF,16,16
-Gonzalez,Leo,16,188,SF,16,16
-Smith,Shin,16,172,PF,16,16
-Nakamura,Riku,18,174,SF,16,16
-Mori,Shin,18,176,PF,16,16
-Watanabe,Toma,18,186,PF,16,16
-Park,Jun,16,193,SG,16,16
-Abe,Sora,16,202,PF,16,16
-Gonzalez,Shin,17,185,PG,16,16
-Suzuki,Ren,17,193,PG,17,17
-Suzuki,Noah,16,205,SG,17,17
-Sato,Kaito,16,170,PF,17,17
-Sato,Aoi,18,181,SG,17,17
-Takahashi,Ren,17,201,PG,17,17
-Kurosawa,Ren,17,204,SF,17,17
-Abe,Kaito,17,175,PF,17,17
-Ito,Shin,16,199,SG,17,17
-Mori,Kaito,18,181,PG,17,17
-Lopez,Ren,17,191,C,17,17
-Tanaka,Daiki,16,191,SG,17,17
-Kishida,Sora,17,181,PF,17,17
-Sato,Mason,16,181,SF,18,18
-Mori,Aoi,18,174,PF,18,18
-Takahashi,Sora,18,191,PF,18,18
-Abe,Ren,18,184,SG,18,18
-Ito,Toma,17,172,SF,18,18
-Lopez,Sora,16,202,SG,18,18
-Mori,Noah,18,174,PF,18,18
-Abe,Ren,16,199,C,18,18
-Takahashi,Leo,18,199,PG,18,18
-Lopez,Aoi,17,171,PG,18,18
-Tanaka,Hayato,17,193,PF,18,18
-Ito,Yuto,16,177,SG,18,18
-Suzuki,Leo,16,193,SG,19,19
-Takahashi,Sora,18,197,PG,19,19
-Watanabe,Leo,17,188,PG,19,19
-Takahashi,Mason,18,197,PF,19,19
-Sato,Jun,17,200,PF,19,19
-Brown,Aoi,16,172,PG,19,19
-Suzuki,Mason,16,198,C,19,19
-Lopez,Kaito,18,171,PF,19,19
-Mori,Sora,18,188,PF,19,19
-Suzuki,Evan,17,204,PF,19,19
-Johnson,Jun,18,195,PF,19,19
-Kishida,Toma,16,190,PF,19,19
-Abe,Evan,17,179,PG,20,20
-Tanaka,Riku,16,176,SF,20,20
-Kobayashi,Yuto,18,183,C,20,20
-Takahashi,Ren,16,185,SF,20,20
-Kishida,Shin,17,179,PF,20,20
-Sato,Riku,17,173,PF,20,20
-Suzuki,Ren,18,194,SF,20,20
-Sato,Sora,16,192,SG,20,20
-Fujita,Mason,16,179,C,20,20
-Gonzalez,Riku,18,192,C,20,20
-Park,Kaito,17,201,PF,20,20
-Suzuki,Jun,18,201,C,20,20
-Kurosawa,Daiki,18,185,SG,21,21
-Kobayashi,Jun,18,188,PF,21,21
-Watanabe,Mason,18,186,SG,21,21
-Kishida,Sora,17,193,SF,21,21
-Kobayashi,Noah,16,198,PG,21,21
-Fujita,Mason,16,191,C,21,21
-Kishida,Daiki,16,193,SF,21,21
-Takahashi,Jun,18,182,SG,21,21
-Kato,Leo,17,177,C,21,21
-Park,Shin,16,186,PF,21,21
-Smith,Daiki,16,174,SF,21,21
-Kobayashi,Ren,18,175,SG,21,21
-Kishida,Ren,17,202,SF,22,22
-Kobayashi,Noah,18,189,SF,22,22
-Smith,Aoi,16,193,C,22,22
-Sato,Yuto,16,193,SG,22,22
-Park,Leo,17,177,PG,22,22
-Kishida,Toma,18,198,SF,22,22
-Smith,Leo,17,177,PF,22,22
-Johnson,Shin,17,198,SF,22,22
-Abe,Mason,18,192,PF,22,22
-Abe,Mason,17,177,C,22,22
-Tanaka,Shin,18,185,SF,22,22
-Smith,Yuto,16,188,PG,22,22
-Johnson,Kaito,18,175,PF,23,23
-Smith,Toma,18,186,SG,23,23
-Kato,Leo,17,184,PG,23,23
-Fujita,Hayato,18,172,SF,23,23
-Kishida,Jun,16,187,PG,23,23
-Brown,Kaito,16,195,PG,23,23
-Kobayashi,Leo,16,187,PG,23,23
-Sato,Jun,18,174,C,23,23
-Sato,Yuto,18,202,SF,23,23
-Abe,Yuto,17,171,C,23,23
-Fujita,Yuto,16,193,PG,23,23
-Kishida,Hayato,16,175,PG,23,23
-Brown,Toma,16,172,C,24,24
-Kato,Leo,16,184,SG,24,24
-Park,Sora,17,188,SF,24,24
-Sato,Evan,16,185,SG,24,24
-Kurosawa,Toma,18,191,SF,24,24
-Gonzalez,Sora,16,170,PG,24,24
-Nakamura,Leo,18,193,PG,24,24
-Smith,Aoi,16,198,C,24,24
-Kobayashi,Sora,16,200,PF,24,24
-Brown,Aoi,18,182,PG,24,24
-Smith,Mason,16,193,SG,24,24
-Sato,Mason,16,193,C,24,24
-Gonzalez,Jun,16,179,PF,25,25
-Watanabe,Riku,18,180,SG,25,25
-Fujita,Ren,18,183,SG,25,25
-Suzuki,Mason,17,179,PF,25,25
-Smith,Hayato,18,181,SF,25,25
-Gonzalez,Aoi,17,190,PF,25,25
-Nakamura,Ren,16,190,SF,25,25
-Johnson,Sora,17,170,PG,25,25
-Yamada,Sora,16,204,SF,25,25
-Abe,Leo,16,170,SF,25,25
-Kato,Aoi,16,170,C,25,25
-Sato,Noah,17,176,PG,25,25
-Takahashi,Mason,18,192,SF,26,26
-Abe,Noah,18,189,PG,26,26
-Johnson,Ren,17,200,PG,26,26
-Gonzalez,Ren,17,195,SG,26,26
-Suzuki,Ren,16,193,PG,26,26
-Tanaka,Mason,18,186,SF,26,26
-Suzuki,Kaito,17,176,PG,26,26
-Sato,Mason,18,180,SG,26,26
-Kurosawa,Shin,17,172,SG,26,26
-Kurosawa,Evan,17,189,PG,26,26
-Yamada,Aoi,16,197,PF,26,26
-Brown,Toma,16,197,PF,26,26
-Smith,Yuto,16,172,SG,27,27
-Suzuki,Leo,17,199,SG,27,27
-Abe,Riku,18,205,PG,27,27
-Fujita,Riku,18,175,PG,27,27
-Mori,Aoi,16,193,PG,27,27
-Park,Leo,16,175,SF,27,27
-Kishida,Shin,18,184,SG,27,27
-Lopez,Kaito,18,171,SF,27,27
-Yamada,Sora,16,204,SF,27,27
-Mori,Kaito,18,199,PF,27,27
-Yamada,Daiki,18,182,PG,27,27
-Watanabe,Evan,17,201,PG,27,27
-Nakamura,Ren,16,174,PF,28,28
-Yamada,Shin,16,172,C,28,28
-Kobayashi,Yuto,16,175,SG,28,28
-Gonzalez,Ren,16,203,SF,28,28
-Smith,Ren,16,203,SG,28,28
-Kishida,Evan,18,179,PG,28,28
-Watanabe,Noah,17,202,PG,28,28
-Brown,Yuto,17,197,SG,28,28
-Smith,Mason,18,188,PG,28,28
-Suzuki,Riku,18,177,PG,28,28
-Tanaka,Toma,17,182,C,28,28
-Ito,Sora,17,183,SG,28,28
-Abe,Shin,16,182,C,29,29
-Smith,Kaito,18,204,PF,29,29
-Abe,Daiki,17,171,SG,29,29
-Kobayashi,Toma,17,171,SF,29,29
-Lopez,Mason,17,196,PG,29,29
-Abe,Mason,18,186,C,29,29
-Smith,Shin,18,172,SG,29,29
-Kato,Evan,18,171,SG,29,29
-Tanaka,Mason,16,199,C,29,29
-Mori,Leo,18,200,SF,29,29
-Sato,Hayato,18,174,PG,29,29
-Gonzalez,Evan,18,185,SF,29,29
-Kishida,Aoi,17,197,C,30,30
-Ito,Kaito,18,201,SF,30,30
-Lopez,Kaito,17,196,SF,30,30
-Watanabe,Yuto,16,191,SG,30,30
-Yamada,Sora,17,193,C,30,30
-Sato,Sora,18,194,C,30,30
-Smith,Aoi,18,170,C,30,30
-Kobayashi,Riku,17,191,C,30,30
-Kato,Toma,16,185,PG,30,30
-Takahashi,Yuto,17,182,PG,30,30
-Gonzalez,Mason,18,179,C,30,30
-Smith,Ren,16,201,PG,30,30
-Nakamura,Leo,17,173,C,31,31
-Lopez,Mason,16,179,PG,31,31
-Takahashi,Shin,17,201,SF,31,31
-Suzuki,Kaito,17,196,C,31,31
-Tanaka,Yuto,16,189,SF,31,31
-Suzuki,Kaito,16,196,SG,31,31
-Fujita,Toma,17,178,PF,31,31
-Nakamura,Shin,18,177,PF,31,31
-Sato,Evan,18,200,PG,31,31
-Gonzalez,Ren,17,203,PF,31,31
-Lopez,Yuto,17,194,PF,31,31
-Tanaka,Hayato,16,205,PF,31,31
-Fujita,Mason,17,201,PF,32,32
-Johnson,Hayato,17,188,C,32,32
-Park,Sora,18,188,C,32,32
-Tanaka,Daiki,16,203,PF,32,32
-Park,Noah,18,171,SG,32,32
-Nakamura,Ren,16,181,C,32,32
-Kishida,Ren,16,199,SG,32,32
-Kishida,Noah,16,196,SG,32,32
-Gonzalez,Evan,17,173,C,32,32
-Smith,Sora,16,181,SG,32,32
-Lopez,Mason,17,181,PG,32,32
-Fujita,Noah,16,201,SG,32,32
-Tabata,Yu,17,176,PG,33,33
-Ueno,Daichi,18,191,SF,33,33
-Otsuka,Takuma,17,183,SG,33,33
-Meguro,Masami,18,198,PF,33,33
-Shinagawa,Kazuma,17,206,C,33,33
-Kurosawa,Jun,18,205,PG,33,33
-Kishida,Aoi,16,182,PG,33,33
-Kishida,Riku,16,178,PG,33,33
-Suzuki,Sora,18,187,SG,33,33
-Johnson,Kaito,16,194,C,33,33
-Johnson,Toma,18,187,PG,33,33
-Fujita,Noah,17,196,PF,33,33
-Nakamura,Daiki,18,201,SF,34,34
-Yamada,Evan,16,201,SG,34,34
-Mori,Jun,18,191,PF,34,34
-Mori,Leo,16,202,C,34,34
-Kobayashi,Yuto,16,179,C,34,34
-Brown,Aoi,16,192,SF,34,34
-Smith,Evan,18,186,PG,34,34
-Nakamura,Shin,18,176,PF,34,34
-Ito,Noah,16,173,PG,34,34
-Ito,Daiki,18,182,SG,34,34
-Ito,Evan,16,191,SF,34,34
-Park,Yuto,17,173,PF,34,34
-Kuroko,Tetsuya,17,176,PG,35,35
-Kagami,Taiga,17,198,PF,35,35
-Hyuga,Junpei,18,187,SG,35,35
-Izuki,Shun,17,178,PG,35,35
-Kiyoshi,Teppei,18,198,C,35,35
-Mitobe,Rinnosuke,18,193,C,35,35
-Furihata,Koki,17,186,SG,35,35
-Kawahara,Koichi,17,175,SG,35,35
-Fukuda,Hiroshi,17,180,SF,35,35
-Koganei,Shinji,17,183,SF,35,35
-Tsuchida,Satoshi,18,200,PF,35,35
-Tanaka,Riku,17,172,PG,35,35
-Kise,Ryota,17,190,SF,36,36
-Kasamatsu,Yukio,18,183,PG,36,36
-Hayakawa,Mitsuhiro,18,195,PF,36,36
-Kobori,Koji,18,205,C,36,36
-Moriyama,Yoshitaka,17,185,SG,36,36
-Nakamura,Shinya,17,180,SG,36,36
-Nakamura,Jun,17,186,PF,36,36
-Yamada,Jun,18,201,SG,36,36
-Watanabe,Ren,17,177,PF,36,36
-Gonzalez,Noah,16,181,SG,36,36
-Suzuki,Leo,16,179,PG,36,36
-Brown,Evan,16,201,PF,36,36
-Aomine,Daiki,18,193,SF,37,37
-Sakurai,Ryo,18,188,PF,37,37
-Wakamatsu,Kosuke,18,185,PG,37,37
-Takahashi,Yuto,16,170,PF,37,37
-Ito,Evan,17,175,SF,37,37
-Abe,Aoi,17,198,PF,37,37
-Tanaka,Riku,17,202,PG,37,37
-Yamada,Noah,17,180,PF,37,37
-Watanabe,Jun,18,187,PF,37,37
-Gonzalez,Jun,16,188,SG,37,37
-Johnson,Aoi,18,199,SF,37,37
-Kurosawa,Daiki,16,186,PF,37,37
-Midorima,Shintaro,18,197,SG,38,38
-Takao,Kazunari,17,183,SG,38,38
-Miyaji,Yuya,18,190,SF,38,38
-Kimura,Shinsuke,18,180,PF,38,38
-Kishida,Toma,16,191,PF,38,38
-Yamada,Jun,17,181,PF,38,38
-Suzuki,Toma,16,173,PF,38,38
-Ito,Mason,18,200,PG,38,38
-Smith,Daiki,16,192,SG,38,38
-Takahashi,Mason,18,189,SF,38,38
-Brown,Toma,17,170,SG,38,38
-Abe,Aoi,18,184,SG,38,38
-Akashi,Seijuro,18,186,PG,39,39
-Mibuchi,Reo,18,185,SG,39,39
-Hayama,Kotaro,18,194,SF,39,39
-Nebuya,Eikichi,18,210,C,39,39
-Kobayashi,Hayato,17,196,SF,39,39
-Fujita,Shin,18,191,PG,39,39
-Kishida,Shin,17,200,C,39,39
-Kobayashi,Evan,16,174,SG,39,39
-Sato,Kaito,17,181,SF,39,39
-Gonzalez,Hayato,16,203,C,39,39
-Johnson,Mason,16,204,C,39,39
-Lopez,Riku,16,204,PF,39,39
-Murasakibara,Atsushi,18,218,C,40,40
-Himuro,Tatsuya,18,197,PF,40,40
-Fukui,Kensuke,18,188,SG,40,40
-Okamura,Kenichi,18,186,SF,40,40
-Liu,Wei,18,200,C,40,40
-Takahashi,Yuto,16,184,PF,40,40
-Gonzalez,Sora,18,181,SG,40,40
-Lopez,Ren,16,196,C,40,40
-Kobayashi,Evan,17,176,SG,40,40
-Park,Toma,18,199,SG,40,40
-Suzuki,Yuto,18,181,SG,40,40
-Abe,Leo,18,193,PG,40,40
+Kishida,Kaito,18,186,PF,Egashira High,Egashira High
+Johnson,Aoi,18,177,SG,Egashira High,Egashira High
+Smith,Hayato,16,183,C,Egashira High,Egashira High
+Kishida,Evan,18,180,SG,Egashira High,Egashira High
+Kobayashi,Sora,16,199,C,Egashira High,Egashira High
+Takahashi,Riku,16,189,PF,Egashira High,Egashira High
+Johnson,Noah,16,199,PG,Egashira High,Egashira High
+Brown,Noah,17,201,SG,Egashira High,Egashira High
+Watanabe,Riku,18,199,PF,Egashira High,Egashira High
+Park,Daiki,16,188,C,Egashira High,Egashira High
+Fujita,Mason,18,170,C,Egashira High,Egashira High
+Kurosawa,Mason,18,186,PF,Yutsumi Gakuen,Yutsumi Gakuen
+Mori,Sora,18,196,PF,Yutsumi Gakuen,Yutsumi Gakuen
+Johnson,Jun,16,188,C,Yutsumi Gakuen,Yutsumi Gakuen
+Takahashi,Aoi,18,172,PF,Yutsumi Gakuen,Yutsumi Gakuen
+Kurosawa,Kaito,17,186,C,Yutsumi Gakuen,Yutsumi Gakuen
+Yamada,Leo,16,171,PF,Yutsumi Gakuen,Yutsumi Gakuen
+Mori,Shin,18,205,PG,Yutsumi Gakuen,Yutsumi Gakuen
+Kurosawa,Evan,17,186,SG,Yutsumi Gakuen,Yutsumi Gakuen
+Kurosawa,Evan,16,197,PG,Yutsumi Gakuen,Yutsumi Gakuen
+Smith,Aoi,18,183,SF,Yutsumi Gakuen,Yutsumi Gakuen
+Kishida,Shin,16,175,SG,Yutsumi Gakuen,Yutsumi Gakuen
+Kishida,Ren,16,191,C,Yutsumi Gakuen,Yutsumi Gakuen
+Tanaka,Kaito,16,176,SF,Ojizawa High,Ojizawa High
+Abe,Hayato,16,190,PF,Ojizawa High,Ojizawa High
+Johnson,Riku,16,175,PG,Ojizawa High,Ojizawa High
+Lopez,Sora,18,178,PG,Ojizawa High,Ojizawa High
+Nakamura,Leo,17,174,SG,Ojizawa High,Ojizawa High
+Brown,Shin,17,173,PF,Ojizawa High,Ojizawa High
+Takahashi,Mason,16,182,C,Ojizawa High,Ojizawa High
+Ito,Mason,18,191,C,Ojizawa High,Ojizawa High
+Watanabe,Evan,17,200,C,Ojizawa High,Ojizawa High
+Lopez,Yuto,17,198,C,Ojizawa High,Ojizawa High
+Tanaka,Toma,17,176,SF,Ojizawa High,Ojizawa High
+Tanaka,Kaito,17,185,SF,Ojizawa High,Ojizawa High
+Gonzalez,Ren,17,204,SG,Ikemoto Commerce High,Ikemoto Commerce High
+Mori,Toma,16,191,PG,Ikemoto Commerce High,Ikemoto Commerce High
+Suzuki,Jun,17,172,PF,Ikemoto Commerce High,Ikemoto Commerce High
+Tanaka,Hayato,16,192,PG,Ikemoto Commerce High,Ikemoto Commerce High
+Abe,Hayato,16,186,PG,Ikemoto Commerce High,Ikemoto Commerce High
+Kishida,Jun,16,192,SF,Ikemoto Commerce High,Ikemoto Commerce High
+Park,Jun,18,205,SF,Ikemoto Commerce High,Ikemoto Commerce High
+Takahashi,Riku,16,170,C,Ikemoto Commerce High,Ikemoto Commerce High
+Abe,Mason,18,193,PF,Ikemoto Commerce High,Ikemoto Commerce High
+Johnson,Ren,17,184,SF,Ikemoto Commerce High,Ikemoto Commerce High
+Kurosawa,Kaito,18,174,SG,Ikemoto Commerce High,Ikemoto Commerce High
+Watanabe,Riku,17,188,PF,Ikemoto Commerce High,Ikemoto Commerce High
+Gonzalez,Sora,18,188,C,Yamanaka Commercial,Yamanaka Commercial
+Suzuki,Leo,18,187,C,Yamanaka Commercial,Yamanaka Commercial
+Fujita,Evan,18,183,SG,Yamanaka Commercial,Yamanaka Commercial
+Watanabe,Yuto,18,195,PG,Yamanaka Commercial,Yamanaka Commercial
+Park,Toma,18,185,PG,Yamanaka Commercial,Yamanaka Commercial
+Abe,Hayato,17,174,PF,Yamanaka Commercial,Yamanaka Commercial
+Kurosawa,Sora,17,195,SG,Yamanaka Commercial,Yamanaka Commercial
+Tanaka,Leo,17,177,C,Yamanaka Commercial,Yamanaka Commercial
+Takahashi,Yuto,18,204,PG,Yamanaka Commercial,Yamanaka Commercial
+Johnson,Sora,18,184,SG,Yamanaka Commercial,Yamanaka Commercial
+Takahashi,Noah,18,192,C,Yamanaka Commercial,Yamanaka Commercial
+Lopez,Yuto,16,203,PG,Yamanaka Commercial,Yamanaka Commercial
+Fujita,Toma,17,183,PF,Nagane Industry High,Nagane Industry High
+Kurosawa,Mason,18,193,PG,Nagane Industry High,Nagane Industry High
+Lopez,Sora,18,175,C,Nagane Industry High,Nagane Industry High
+Tanaka,Jun,17,199,PF,Nagane Industry High,Nagane Industry High
+Yamada,Noah,17,181,PG,Nagane Industry High,Nagane Industry High
+Suzuki,Hayato,16,182,C,Nagane Industry High,Nagane Industry High
+Mori,Hayato,16,197,SG,Nagane Industry High,Nagane Industry High
+Lopez,Mason,18,172,PG,Nagane Industry High,Nagane Industry High
+Kurosawa,Noah,16,202,PF,Nagane Industry High,Nagane Industry High
+Kishida,Aoi,17,172,PG,Nagane Industry High,Nagane Industry High
+Tanaka,Hayato,18,176,PF,Nagane Industry High,Nagane Industry High
+Kato,Noah,18,181,C,Nagane Industry High,Nagane Industry High
+Sato,Ren,18,199,SF,Obayashi Academy,Obayashi Academy
+Brown,Kaito,18,183,SG,Obayashi Academy,Obayashi Academy
+Kurosawa,Kaito,17,180,SG,Obayashi Academy,Obayashi Academy
+Yamada,Hayato,18,179,PG,Obayashi Academy,Obayashi Academy
+Gonzalez,Evan,18,177,SF,Obayashi Academy,Obayashi Academy
+Nakamura,Mason,17,174,SG,Obayashi Academy,Obayashi Academy
+Kurosawa,Mason,18,205,SF,Obayashi Academy,Obayashi Academy
+Ito,Daiki,16,193,SF,Obayashi Academy,Obayashi Academy
+Kobayashi,Toma,17,197,PG,Obayashi Academy,Obayashi Academy
+Takahashi,Riku,16,173,SG,Obayashi Academy,Obayashi Academy
+Tanaka,Evan,18,203,PF,Obayashi Academy,Obayashi Academy
+Nakamura,Aoi,18,180,PG,Obayashi Academy,Obayashi Academy
+Ito,Ren,18,184,PF,Kamino High,Kamino High
+Yamada,Mason,16,203,PF,Kamino High,Kamino High
+Ito,Evan,17,192,SF,Kamino High,Kamino High
+Park,Leo,18,186,C,Kamino High,Kamino High
+Johnson,Aoi,17,191,C,Kamino High,Kamino High
+Yamada,Toma,16,193,SF,Kamino High,Kamino High
+Nakamura,Riku,16,192,C,Kamino High,Kamino High
+Abe,Noah,17,180,SF,Kamino High,Kamino High
+Watanabe,Daiki,17,192,C,Kamino High,Kamino High
+Smith,Daiki,16,183,SG,Kamino High,Kamino High
+Suzuki,Aoi,17,171,C,Kamino High,Kamino High
+Fujita,Shin,16,202,SG,Kamino High,Kamino High

@@ -108,8 +108,32 @@ def main() :
             else:
                 print("Choisissez un chiffre qui appartient au menu s'ils vous plaît.")
         elif choice_usr == 4:
-            #delete
-            pass
+            print("\n1. Teams")
+            print("2. HighSchool")
+            print("3. Players")
+            print("4. Coachs")            
+
+            while True:
+                try:
+                    table_choice = int(input("\nDans quelle table voulez-vous insérer en utilisant un fichier csv? "))
+                    break
+                except ValueError:
+                    print("\nVeuillez choisir un numéro s'ils vous plaît.")
+            if table_choice == 1:
+                exec_delete_teams()
+                break
+            elif table_choice == 2:
+                exec_delete_highschool()
+                break
+            elif table_choice == 3:
+                exec_delete_players()
+                break
+            elif table_choice == 4:
+                exec_delete_coach()
+                break
+            else:
+                print("Choisissez un chiffre qui appartient au menu s'ils vous plaît.")   
+            
 
         elif choice_usr == 5:
             print("\n1. Teams")
@@ -142,17 +166,12 @@ def main() :
             else:
                 print("Choisissez un chiffre qui appartient au menu s'ils vous plaît.")   
         elif choice_usr == 6:
-            #quitter
+            for i in range(1,4):
+                print("Déconnexion dans: ",i,end='\r')
+                time.sleep(1)
+            quit()
             pass    
                         
-            
-
-#Continuer le code du menu pour l'usr et rajouter les def delete, updates, et certains selects
-#def updates fini il reste delete et select a voir encore
-
-#Si possible coder une petite interface dans le terminal(Apprendre comment faire ca pendant les vancances.)
-
-#name de tournament est unique pour l'instant faudra l'enlever aprés
 
 if __name__ == '__main__':
     main()

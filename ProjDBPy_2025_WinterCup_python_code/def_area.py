@@ -12,6 +12,18 @@ def wintercup_open():
 
 db_connection= wintercup_open()
 
+def set_foreign_key_0():
+    query = 'SET FOREIGN_KEY_CHECKS = 0'
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    cursor.close()
+
+def set_foreign_key_1():
+    query = 'SET FOREIGN_KEY_CHECKS = 1'
+    cursor = db_connection.cursor()
+    cursor.execute(query)
+    cursor.close()
+
 def select_players():
     query = "SELECT * FROM players"
     cursor = db_connection.cursor()
@@ -288,14 +300,70 @@ def exec_delete_teams():
         except ValueError as err:
             print(err)    
     try:
+        set_foreign_key_0()
         delete_teams_from_id(id_for_delete)
+        set_foreign_key_1()
+    except ValueError as err:
+        print("L'id séléctionnez n'existe pas")
+
+def exec_delete_highschool():
+    print("Voici les données de la table highschool: \n")
+    for i in range(1,4):
+        print("temps pour affichage:",i,end='\r')
+        time.sleep(1)
+    select_data_highschool()
+    while True:
+        try:
+            id_for_delete = int(input("Rentrez l'id pour delete: "))
+            break
+        except ValueError as err:
+            print(err)    
+    try:
+        set_foreign_key_0()
+        delete_highschool_from_id(id_for_delete)
+        set_foreign_key_1()
+    except ValueError as err:
+        print("L'id séléctionnez n'existe pas")
+
+def exec_delete_players():
+    print("Voici les données de la table players: \n")
+    for i in range(1,4):
+        print("temps pour affichage:",i,end='\r')
+        time.sleep(1)
+    select_data_players()
+    while True:
+        try:
+            id_for_delete = int(input("Rentrez l'id pour delete: "))
+            break
+        except ValueError as err:
+            print(err)    
+    try:
+        set_foreign_key_0()
+        delete_players_from_id(id_for_delete)
+        set_foreign_key_1()
+    except ValueError as err:
+        print("L'id séléctionnez n'existe pas")
+
+def exec_delete_coach():
+    print("Voici les données de la table coach: \n")
+    for i in range(1,4):
+        print("temps pour affichage:",i,end='\r')
+        time.sleep(1)
+    select_data_coachs()
+    while True:
+        try:
+            id_for_delete = int(input("Rentrez l'id pour delete: "))
+            break
+        except ValueError as err:
+            print(err)    
+    try:
+        set_foreign_key_0()
+        delete_teams_from_id(id_for_delete)
+        set_foreign_key_1()
     except ValueError as err:
         print("L'id séléctionnez n'existe pas")
 
     
-# Pas d'idée pour l'instant de comment code cette partie qui a une table intermediaire
-def select_player_statistics():
-    pass
 
 
 def insert_datas_highschool():
