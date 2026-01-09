@@ -373,6 +373,7 @@ def insert_datas_players():
         
         try:
             add_data_players(lastname_player, firstname_player, age, tall, position, highschool_id, teams_id)
+            print(f"Le player: {firstname_player} a bien été enregistré.")
         except ValueError as err:
             print(err)
 
@@ -396,6 +397,8 @@ def insert_datas_coachs():
                 print("Veuillez rentrer un chiffre") 
         try:
             add_data_coachs(lastname_coach,firstname_coach, type_coach, team_id)
+            print(f"Le coach: {firstname_coach} a bien été enregistré.")
+
             break
         except ValueError as err:
             print(err)
@@ -411,8 +414,9 @@ def insert_datas_team_with_csv():
                 print(f"La team: {row[0]} existe déjà")
             else:
                 add_data_teams(row[0], row[1])
+                print(f"La team {row[0]} a bien été enregistré")
 
-        print("Les données ont bien été enregistrées")
+        print("\nLes données ont bien été enregistrées")
 
 def insert_datas_highschool_with_csv():
     with open("../csv/highschool.csv") as file:
@@ -423,6 +427,8 @@ def insert_datas_highschool_with_csv():
                 print(f"La highschool: {row[0]} existe déjà")
             else:
                 add_data_highschool(row[0], row[1], row[2])
+        
+        print("Les données ont bien été enregistrées")
 
 def insert_datas_player_with_csv():
     with open("../csv/players.csv") as file:
@@ -437,6 +443,8 @@ def insert_datas_player_with_csv():
                 print(f"La highschool: {row[5]} n'existe pas pour la ligne: {row}")
             else:
                 print(f"La team: {row[6]} n'existe pas pour la ligne: {row}")
+        
+        print("Les données ont bien été enregistrées")
 
 def insert_datas_coaches_with_csv():
     with open("../csv/coaches.csv") as file:
